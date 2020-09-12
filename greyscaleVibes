@@ -1,0 +1,132 @@
+* {
+	   letter-spacing: -1px;
+}
+
+.grid-container {
+	   position: static;
+				margin: 70px auto auto auto;
+	   display: grid;
+				grid-row-gap: 15px;
+				grid-column-gap: 15px;
+}
+
+html {
+		font-family: Trebuchet MS;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: #2b2b2b;
+		text-align: center;
+		color: #d4d4d4;
+}
+
+body {
+	   width: 100%;
+}
+
+div.textdisplay {
+	   background-color: #a8a8a8;
+				border: 1px solid black
+}
+
+div.textdisplay h1, div.textdisplay h3, div.textdisplay b {
+	   text-transform: uppercase;
+    background-color: #a8a8a8;
+				color: black;
+}
+
+div.textdisplay h1, div.textdisplay b {
+		   letter-spacing: -3px;
+					font-size: 225%;
+					line-height: 0.75;
+					padding: 15px 20px 0px 20px;
+}
+
+p.script {
+	   text-align: justify;
+				background-color: #a8a8a8;
+				color: black;
+				padding: 0px 20px 0px 20px;
+}
+
+a {
+    text-decoration: none;
+				color: blue;
+}
+
+div.navbar {
+   	position: absolute;
+				top: 0px;
+				left: 0px;
+				margin: 0;
+				padding: 10px 0px 10px 0px;
+				width: 100%;
+				height: auto;
+				background-color: #101010;
+				overflow: hidden;
+}
+
+div.navbar ul {
+	   display: block;
+	   list-style-type: none;
+}
+
+div.navbar ul li:first-child {
+				float: left;
+}
+
+div.navbar ul li:not(:first-child) {
+	   float: right;
+}
+
+div.navbar ul li:nth-child(2) {
+	   padding-right: 20px;
+}
+
+div.navbar ul li a {
+    text-align: left;
+	   display: block;
+				color: #999999;
+				font-size: 125%;
+				padding: 0px 20px 0px 20px;
+}
+
+div.navbar ul li a:hover {
+				color: white;
+}
+
+div.linktable {
+				background-color: #101010;
+				margin: 10px 10px 20px 10px;
+				border-radius: 5px;
+}
+
+div.linktable h1 {
+				color: #D0D0D0;
+				font-size: 110%;
+				padding: 10px 20px 10px 20px;
+}
+
+div.linktable ul {
+	   list-style-type: none;
+				max-width: 100%;
+				height: auto;
+				margin: 0px 20px 0px 20px;
+				padding: 0;
+    overflow: hidden;
+}
+
+div.linktable ul li a {
+	   display: block;
+				margin: 3px;
+				padding: 10px 20px;
+				color: black;
+				background-color: #999999;
+				border-top: 1px solid #505050;
+				border-left: 1px solid #505050;
+				border-right: 1px solid #505050;
+}
+
+div.linktable ul li a:hover {
+				color: white;
+}
