@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+{% load static %}
+
+<head>
+    <title>Home - Hive Sweet Hive</title>
+    <link rel='stylesheet' href="{% static 'css/greyscaleVibes.css' %}">
+    <link rel='icon' href="{% static 'images/favicon.ico' %}">
+    <meta name='author' content='Brandon Dos Remedios @bdosremedios'>
+</head>
+
+<body>
+    <div class=navbar>
+        <ul>
+            <li><a href='/'>Home</a></li>
+            <li><a href='{% url 'blog_about' %}'>About</a></li>
+            <li><a href='{% url 'blog_home' %}'>Blog</a></li>
+            <li><a href='{% url 'test_page' %}'>Test Page</a></li>
+        </ul>
+    </div>
+    <div class=grid-container>
+    	   <img src='{% static 'images/bannerArt.png' %}'
+             alt='Bees died :('
+             style="max-width: 100%; height: auto; border: 1px solid black;
+                    grid-column-start: 1; grid-column-end: 3;
+                    grid-row-start: 1; grid-row-end: 1;">
+        <div class=textdisplay
+             style='grid-column-start: 1; grid-column-end: 2;
+                    grid-row-start: 2; grid-row-end: 2;'>
+            <h1 style="padding-top: 15px; padding-bottom: 0px"><b>The Holy Beeble</b></h1>
+    	       <h3 style="padding-top: 0px; padding-bottom: 0px">The bees are inevitable, there is no escape. Prepare for eternal pollination &lt(ಠ_ಠ)&gt</h3>
+            <a href=#bottom id=top>Bottom of Script</a>
+            <p class=script>{{bee_movie_script}}</p>
+            <a href=#top id=bottom style='padding-bottom: 15px'>Top of Script</a>
+        </div>
+        <div class=linktable
+             style='grid-column-start: 2; grid-column-end: 3;
+                    grid-row-start: 2; grid-row-end: 2'>
+             <h1>Links you won't BEElieve</h1>
+             <ul>
+                 {% for buzz in buzzes %}
+                 <li><a href={{buzz.link}}>{{buzz.name}}</a></li>
+                 {% endfor %}
+             </ul>
+        </div>
+    </div>
+</body>
+
+</html>
